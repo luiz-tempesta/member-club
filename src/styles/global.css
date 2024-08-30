@@ -1,21 +1,86 @@
-/* Color styles */
---main---pink: rgba(214, 88, 179, 1);
---main---green: rgba(69, 180, 66, 1);
---base---white: rgba(255, 255, 255, 1);
---base---gray-100: rgba(244, 241, 242, 1);
---base---gray-200: rgba(233, 231, 233, 1);
---base---gray-300: rgba(223, 220, 223, 1);
---base---gray-400: rgba(206, 202, 205, 1);
---base---gray-500: rgba(117, 108, 113, 1);
---base---gray-600: rgba(74, 68, 72, 1);
---base---gray-700: rgba(51, 43, 49, 1);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-/* Text-size styles */
-/* base size: body---text--md (16px) */
---heading---title--md: 1.5rem;
---heading---title--sm: 1.12rem;
---heading---subtitle--md: 0.88rem;
---heading---subtitle--sm: 0.75rem;
---body---text--md: 1rem;
---body---text--sm: 0.88rem;
---body---text--xs: 0.75rem;
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  /* Color styles */
+  --main---pink: rgba(214, 88, 179, 1);
+  --main---green: rgba(69, 180, 66, 1);
+  --base---white: rgba(255, 255, 255, 1);
+  --base---gray-100: rgba(244, 241, 242, 1);
+  --base---gray-200: rgba(233, 231, 233, 1);
+  --base---gray-300: rgba(223, 220, 223, 1);
+  --base---gray-400: rgba(206, 202, 205, 1);
+  --base---gray-500: rgba(117, 108, 113, 1);
+  --base---gray-600: rgba(74, 68, 72, 1);
+  --base---gray-700: rgba(51, 43, 49, 1);
+
+  /* Text-size styles */
+  /* base size: body---text--md (16px) */
+  --heading---title--md: 1.5rem;
+  --heading---title--sm: 1.12rem;
+  --heading---subtitle--md: 0.88rem;
+  --heading---subtitle--sm: 0.75rem;
+  --body---text--md: 1rem;
+  --body---text--sm: 0.88rem;
+  --body---text--xs: 0.75rem;
+
+  --ff-sans: 'Oxygen', system-ui, sans-serif;
+  --fw-base: 300;
+  --fw-md: 400;
+  --fw-bold: 700;
+}
+
+html {
+  font-family: var(--ff-sans);
+  font-weight: var(--fw-base);
+  font-size: var(--fs-base);
+  line-height: 1.4;
+  color: var(--base---gray-500);
+
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--base---gray-200);
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: var(--base---gray-600);
+  font-size: var(--heading---title--md);
+  font-weight: var(--fw-bold);
+}
+
+h2 {
+  color: var(--base---gray-500);
+  font-size: var(--heading---subtitle--md);
+  font-weight: var(--fw-bold);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul[role='list'] {
+  list-style: none;
+}
+
+
+
+

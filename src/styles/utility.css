@@ -1,0 +1,47 @@
+.container {
+  --max-width: 351px;
+  width: min(var(--max-width), 100% - 2rem * 2);
+  width: 350px;
+  margin-inline: auto;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.logo {
+  width: 6.25rem;
+}
+
+@media (width >= 80em) {
+  .container {
+    --max-width: 80rem;
+    width: 912px;
+  }
+
+  .desktop-only {
+    display: initial;
+  }
+
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
