@@ -3,14 +3,15 @@
   margin-bottom: 2rem;
 
   & img {
-    height: 3rem;
+    height: 6rem;
   }
 }
 
 @media (min-width: 1120px) {
   #logo {
+    margin-bottom: 0rem;
     & img {
-      height: 3.5rem;
+      height: 8rem;
     }
   }
 }
