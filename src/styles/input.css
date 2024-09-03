@@ -17,6 +17,12 @@
   height: 22px;
   border: none;
   background: inherit;
+  background-color: transparent;
+  outline: none;
+}
+
+.input:focus-within {
+  border: 1.5px solid var(--base---gray-700);
 }
 
 .input button {
