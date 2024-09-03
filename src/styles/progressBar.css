@@ -1,0 +1,47 @@
+.progressBar {
+  width: 351px;  
+  background: var(--base---gray-100);
+  border: 1px solid var(--base---gray-300);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 32px;
+  padding-block: 27px;
+  gap: 16px;
+  
+  & img {
+    position: relative;
+    height: 72px;
+    width: 72px;
+    background: var(--base---gray-200);
+    border-radius: 99%;
+  };  
+
+  & section {
+    width: 231px;
+
+    & .texto {
+      font-size: 12px;
+    }
+  }
+
+}
+
+@media (min-width: 1120px) {
+  .progressBar {
+    width: 568px;
+    height: 500px;
+
+    & section {
+      width: 400px;
+
+      & progress {
+        width: 340px;
+      }
+    }
+  }
+
+  
+}

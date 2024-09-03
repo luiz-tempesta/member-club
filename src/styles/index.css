@@ -1,3 +1,7 @@
 @import url(global.css);
 @import url(header.css);
-@import url(utility.css);
+@import url(input.css);
+@import url(profile.css);
+@import url(progressBar.css);
+@import url(card.css);
+@import url(content.css);
