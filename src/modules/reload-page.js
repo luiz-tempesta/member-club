@@ -47,5 +47,9 @@ export function reloadPage(data) {
       list.append(itemList);
     }
   }
+
+  if (data?.loyaltyCard?.totalCuts >= 10) {
+    document.getElementById('modal').style.display = 'block';
+  }
   
 }
