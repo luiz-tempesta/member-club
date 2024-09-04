@@ -41,9 +41,9 @@
 }
 
 .history ul li div {
-  width: 70px;
+  width: 80px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: left;
 }
